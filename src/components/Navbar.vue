@@ -1,4 +1,4 @@
-<template></template>
+<template> </template>
 
 <script>
 import { ref } from 'vue'
