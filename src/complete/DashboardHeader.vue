@@ -73,3 +73,24 @@ export default {
   },
 }
 </script>
+
+
+
+
+<!--
+
+layoutClasses({ stacked, horizontal }) {
+  const classes = Object.entries(props.layout)
+    .map(([screen, layout]) => {
+      return (layout === 'stacked' ? stacked : horizontal)
+        .split(' ')
+        .map((c) => c.replace(/^\{screen\}:/, ''))
+        .map((c) => (screen === 'default' ? c : `${screen}:${c}`))
+        .join(' ')
+    })
+    .join(' ')
+
+  return classes
+},
+
+-->
