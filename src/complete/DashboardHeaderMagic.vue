@@ -4,8 +4,9 @@
       <div
         :class="
           layoutClasses({
-            stacked: 'block space-y-8 space-x-0',
-            horizontal: 'space-y-0 flex justify-between items-center',
+            stacked: '{screen}:block {screen}:space-y-8 {screen}:space-x-0',
+            horizontal:
+              '{screen}:space-y-0 {screen}:flex {screen}:justify-between {screen}:items-center',
           })
         "
       >
@@ -30,8 +31,8 @@
         <div
           :class="
             layoutClasses({
-              stacked: 'flex flex-col space-y-3 space-x-0',
-              horizontal: 'space-y-0 space-x-3 flex-row',
+              stacked: '{screen}:flex {screen}:flex-col {screen}:space-y-3 {screen}:space-x-0',
+              horizontal: '{screen}:space-y-0 {screen}:space-x-3 {screen}:flex-row',
             })
           "
         >
@@ -47,8 +48,8 @@
       <div
         :class="
           layoutClasses({
-            stacked: 'flex flex-col space-y-3 space-x-0',
-            horizontal: 'space-y-0 space-x-3 flex-row',
+            stacked: '{screen}:flex {screen}:flex-col {screen}:space-y-3 {screen}:space-x-0',
+            horizontal: '{screen}:space-y-0 {screen}:space-x-3 {screen}:flex-row',
           })
         "
       >
@@ -89,6 +90,7 @@ export default {
           .map(([screen, layout]) => {
             return (layout === 'stacked' ? stacked : horizontal)
               .split(' ')
+              .map((c) => c.replace(/^\{screen\}:/, ''))
               .map((c) => (screen === 'default' ? c : `${screen}:${c}`))
               .join(' ')
           })
