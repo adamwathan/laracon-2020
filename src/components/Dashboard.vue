@@ -428,6 +428,10 @@ import { ref } from 'vue'
 import BadgeCheckIcon from 'heroicons/vue/solid/BadgeCheck'
 import CollectionIcon from 'heroicons/vue/solid/Collection'
 import StarIcon from 'heroicons/vue/solid/Star'
+import Navbar from './Navbar.vue'
+import DashboardHeader from './DashboardHeader.vue'
+import ProjectList from './ProjectList.vue'
+import ActivityFeed from './ActivityFeed.vue'
 import GitHubIcon from './GitHubIcon.vue'
 
 export default {
@@ -436,6 +440,10 @@ export default {
     CollectionIcon,
     StarIcon,
     GitHubIcon,
+    Navbar,
+    DashboardHeader,
+    ProjectList,
+    ActivityFeed,
   },
   setup(props) {
     const isUserMenuOpen = ref(false)
