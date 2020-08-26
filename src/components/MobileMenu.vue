@@ -5,6 +5,3 @@ export default {
   props: [],
 }
 </script>
-
-<style>
-</style>

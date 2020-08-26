@@ -1,14 +1,18 @@
 <template></template>
 
 <script>
+import { ref } from 'vue'
 export default {
   components: {
     // ...
   },
-  data() {
+  setup() {
+    const isUserMenuOpen = ref(false)
+    const isMobileMenuOpen = ref(false)
+
     return {
-      isMobileMenuOpen: false,
-      isUserMenuOpen: false,
+      isMobileMenuOpen,
+      isUserMenuOpen,
     }
   },
 }

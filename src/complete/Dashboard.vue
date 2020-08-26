@@ -1,14 +1,36 @@
 <template>
-  <Dashboard />
+  <DashboardLayout>
+    <template #header>
+      <Navbar />
+    </template>
+    <template #leftColumn>
+      <DashboardHeader :user="user" />
+    </template>
+    <template #centerColumn>
+      <ProjectList :projects="projects" />
+    </template>
+    <template #rightColumn>
+      <ActivityFeed :activityItems="activityItems" />
+    </template>
+  </DashboardLayout>
 </template>
 
 <script>
-import Dashboard from './complete/Dashboard.vue'
+import DashboardLayout from './DashboardLayout.vue'
+import Navbar from './Navbar.vue'
+import DashboardHeader from './DashboardHeader.vue'
+import DashboardHeaderMagic from './DashboardHeaderMagic.vue'
+import ProjectList from './ProjectList.vue'
+import ActivityFeed from './ActivityFeed.vue'
 
 export default {
-  name: 'App',
   components: {
-    Dashboard,
+    Navbar,
+    DashboardLayout,
+    DashboardHeader,
+    DashboardHeaderMagic,
+    ProjectList,
+    ActivityFeed,
   },
   setup(props) {
     return {
@@ -176,3 +198,19 @@ export default {
   },
 }
 </script>
+
+
+<!--
+  <DashboardHeaderMagic
+    :user="user"
+    :layout="{ default: 'stacked', sm: 'horizontal', xl: 'stacked' }"
+  />
+-->
+
+<!--
+  <div class="bg-white">
+    <div class="max-w-7xl w-full mx-auto p-8">
+      <DashboardHeaderMagic :user="user" :layout="{ default: 'stacked', sm: 'horizontal' }" />
+    </div>
+  </div>
+-->
