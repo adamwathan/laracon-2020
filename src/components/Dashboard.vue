@@ -126,7 +126,7 @@
                           href="#"
                           class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
                           role="menuitem"
-                          >Logout</a
+                          >Sign out</a
                         >
                       </div>
                     </div>
@@ -145,7 +145,7 @@
               href="#"
               class="block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600 focus:outline-none focus:text-white focus:bg-indigo-600 transition duration-150 ease-in-out"
             >
-              Dashboard
+              Documentation
             </a>
             <a
               href="#"
