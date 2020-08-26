@@ -227,7 +227,7 @@
                       <span class="inline-flex rounded-md shadow-sm">
                         <button
                           type="button"
-                          class="w-full inline-flex items-center justify-center px-4 py-2 border text-sm leading-5 font-medium rounded-md focus:outline-none transition ease-in-out duration-150border-gray-300 text-gray-700 bg-white hover:text-gray-500 focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50"
+                          class="w-full inline-flex items-center justify-center px-4 py-2 border text-sm leading-5 font-medium rounded-md focus:outline-none transition ease-in-out duration-150 border-gray-300 text-gray-700 bg-white hover:text-gray-500 focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50"
                         >
                           Invite Team
                         </button>
@@ -428,10 +428,6 @@ import { ref } from 'vue'
 import BadgeCheckIcon from 'heroicons/vue/solid/BadgeCheck'
 import CollectionIcon from 'heroicons/vue/solid/Collection'
 import StarIcon from 'heroicons/vue/solid/Star'
-import Navbar from './Navbar.vue'
-import DashboardHeader from './DashboardHeader.vue'
-import ProjectList from './ProjectList.vue'
-import ActivityFeed from './ActivityFeed.vue'
 import GitHubIcon from './GitHubIcon.vue'
 
 export default {
@@ -440,10 +436,6 @@ export default {
     CollectionIcon,
     StarIcon,
     GitHubIcon,
-    Navbar,
-    DashboardHeader,
-    ProjectList,
-    ActivityFeed,
   },
   setup(props) {
     const isUserMenuOpen = ref(false)
