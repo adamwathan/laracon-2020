@@ -2,9 +2,18 @@
   <DashboardLayout>
     <template #header>
       <Navbar />
+
+      <div class="bg-white">
+        <div class="max-w-7xl w-full mx-auto p-8">
+          <DashboardHeaderMagic :user="user" :layout="{ default: 'stacked', sm: 'horizontal' }" />
+        </div>
+      </div>
     </template>
     <template #leftColumn>
-      <DashboardHeader :user="user" />
+      <DashboardHeaderMagic
+        :user="user"
+        :layout="{ default: 'stacked', sm: 'horizontal', xl: 'stacked' }"
+      />
     </template>
     <template #centerColumn>
       <ProjectList :projects="projects" />

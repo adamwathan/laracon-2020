@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center">
+  <div class="flex flex-wrap gap-3 items-center">
     <div class="flex-1 whitespace-no-wrap">
       <slot name="heading" />
     </div>

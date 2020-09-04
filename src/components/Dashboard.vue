@@ -429,6 +429,7 @@ import BadgeCheckIcon from 'heroicons/vue/solid/BadgeCheck'
 import CollectionIcon from 'heroicons/vue/solid/Collection'
 import StarIcon from 'heroicons/vue/solid/Star'
 import GitHubIcon from './GitHubIcon.vue'
+import IconBadge from './IconBadge.vue'
 
 export default {
   components: {
@@ -436,6 +437,7 @@ export default {
     CollectionIcon,
     StarIcon,
     GitHubIcon,
+    IconBadge,
   },
   setup(props) {
     const isUserMenuOpen = ref(false)
